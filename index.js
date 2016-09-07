@@ -25,17 +25,18 @@ function show(data) {
         tag("ul", data[testContractName].map(testCase =>
           tag("li", [
             text(`${testCase.ok ? "OK " : "FAIL "}${testCase.name}`),
-          ].concat(testCase.logs.map(log =>
-            tag("li", [
-              text(log.name || "<unknown event>")
-            ].concat(
-              log.params ? [
-                tag("ol", log.params.map(param =>
-                  tag("li", [text(`${param.name}: ${param.value}`)])
-                ))
-              ] : []
+            tag("ul", testCase.logs.map(log =>
+              tag("li", [
+                text(log.name || "<unknown event>")
+              ].concat(
+                log.params ? [
+                  tag("ol", log.params.map(param =>
+                    tag("li", [text(`${param.name}: ${param.value}`)])
+                  ))
+                ] : []
+              ))
             ))
-          )))
+          ])
         ))
       ])
     )
