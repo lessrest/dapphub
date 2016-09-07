@@ -1,0 +1,8 @@
+* { margin: 0; box-sizing: border-box; }
+html, input, button { font: 18px/1.4 "fantasque sans mono", "inconsolata", monospace; }
+h1, h2, h3 { font-size: 1rem; }
+body { margin: 1rem; }
+h1 { text-align: center; margin: 1rem 0; }
+li { font-size: 90%; }
+#results > li { margin: .5em 0; }
+ul, ol { list-style-type: none; padding-left: 1rem; }
