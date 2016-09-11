@@ -1,4 +1,5 @@
-var dataUrl = "https://s3.eu-central-1.amazonaws.com/dapp-rev-results/d4e01d8156241e02ca748c10dddd0da0245c3a63.json"
+var rev = "5cad0d0fdb371721be4066ac7a9972aadc2754d1"
+var dataUrl = "https://s3.eu-central-1.amazonaws.com/dapp-rev-results/" + rev + ".json"
 
 var req = new XMLHttpRequest()
 req.onload = function() {
