@@ -1,4 +1,4 @@
-var rev = "7d3810011340c7f40fbcc8ecb6a13618136e14f9"
+var rev = "5cad0d0fdb371721be4066ac7a9972aadc2754d1"
 var dataUrl = "https://s3.eu-central-1.amazonaws.com/dapp-rev-results/" + rev + ".json"
 
 var req = new XMLHttpRequest()
